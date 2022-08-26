@@ -1,8 +1,6 @@
-# Auvitronics Official Website  
 ### Created by : Ali Jibran 👨🏽‍💻
 
-[Auvitronics](https://www.auvitronics.com)
-[Test Link](https://test.auvitronics.com)  
+
 
 
 [First Link](https://css-tricks.com/gulp-for-beginners/)  
