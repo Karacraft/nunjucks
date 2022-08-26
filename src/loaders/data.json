@@ -1,0 +1,183 @@
+{
+    "hcp": [
+        {
+            "src":"public/images/products/hcp/anticrackingcapwithyellowseal_small.jpg" ,
+            "src2":"public/images/products/hcp/anticrackingcapwithyellowseal.jpg" ,
+            "alt":"Anti Cracking Cap (Yellow Seal)"
+        }, 
+        {
+            "src":"public/images/products/hcp/mouthwash250ml_small.jpg" ,
+            "src2":"public/images/products/hcp/mouthwash250ml.jpg" ,
+            "alt":"Mouthwash 250 ml"
+        },
+        {
+            "src":"public/images/products/hcp/syrup_cap_with_s_moulded_seal_small.jpg" ,
+            "src2":"public/images/products/hcp/syrup_cap_with_s_moulded_seal.jpg" ,
+            "alt":"Syrup Cap (S Moulded Seal)"
+        },
+        {
+            "src":"public/images/products/hcp/syrupbottle120mlambermarketshap2_small.jpg" ,
+            "src2":"public/images/products/hcp/syrupbottle120mlambermarketshap2.jpg" ,
+            "alt":"Syrup Bottle 120 ml Amber"
+        },
+        {
+            "src":"public/images/products/hcp/syrupbottle120mlwhiteavtshape_small.jpg" ,
+            "src2":"public/images/products/hcp/syrupbottle120mlwhiteavtshape.jpg" ,
+            "alt":"Syrup Bottle 120 ml white"
+        },
+        {
+            "src":"public/images/products/hcp/mouthwashcapwithredseal_small.jpg" ,
+            "src2":"public/images/products/hcp/mouthwashcapwithredseal.jpg" ,
+            "alt":"Mouthwash Cap (Red Seal)"
+        },
+        {
+            "src":"public/images/products/hcp/syrupbottle30mlavtshape_small.jpg" ,
+            "src2":"public/images/products/hcp/syrupbottle30mlavtshape.jpg" ,
+            "alt":"Syrup Bottle 30 ml"
+        },
+        {
+            "src":"public/images/products/hcp/eyedropnozzle0point6ml_small.jpg" ,
+            "src2":"public/images/products/hcp/eyedropnozzle0point6ml.jpg" ,
+            "alt":"Eyedrop Nozzle 0.6 ml"
+        },
+        {
+            "src":"public/images/products/hcp/eyedropcapwithmulticolorsealavtshape_small.jpg" ,
+            "src2":"public/images/products/hcp/eyedropcapwithmulticolorsealavtshape.jpg" ,
+            "alt":"Eyedrop cap (Multi Color Seal)"
+        }
+    ],
+    "auto":[
+        {
+            "src":"public/images/products/automotive/new2022/DSC00093_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/DSC00093.jpg" ,
+            "alt":"Back Lamp"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/bul_lh_278x2_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/bul_lh_278x2.jpg" ,
+            "alt": "Back Lamp"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/DSC00122_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/DSC00122.jpg" ,
+            "alt":"Rear Lamp Indicator"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/DSC00169_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/DSC00169.jpg" ,
+            "alt":"Front Lamp"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/cover_fr_bumper_645b1_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/cover_fr_bumper_645b1.jpg" ,
+            "alt":"Bumper"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/grill_assy_radiator_645b3_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/grill_assy_radiator_645b3.jpg" ,
+            "alt":"Radiator Grill"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/headlamp_halogen_lh1_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/headlamp_halogen_lh1.jpg" ,
+            "alt":"Headlamp Halogen Honda Bike"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/moulding_instr_cstr_662b1_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/moulding_instr_cstr_662b1.jpg" ,
+            "alt":"Moulding Insert"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/2din_audio_278b1_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/2din_audio_278b1.jpg" ,
+            "alt":"HACPL Toolbox"
+        }, 
+        {
+            "src":"public/images/products/automotive/new2022/hacpl-toolbox2_small.jpg" ,
+            "src2":"public/images/products/automotive/new2022/hacpl-toolbox2.jpg" ,
+            "alt":"2 DIN Audio"
+        }, 
+        {
+            "src":"public/images/products/automotive/cubic_printed.webp" ,
+            "src2":"public/images/products/automotive/cubic_printed.webp" ,
+            "alt":"Cubic Printed"
+        }, 
+        {
+            "src":"public/images/products/automotive/cap_sub_assy_wheel.webp" ,
+            "src2":"public/images/products/automotive/cap_sub_assy_wheel.webp" ,
+            "alt":"Cap Sub Assy Wheel"
+        }, 
+        {
+            "src":"public/images/products/automotive/door_assy_glove_compartment.webp" ,
+            "src2":"public/images/products/automotive/door_assy_glove_compartment.webp" ,
+            "alt":"Door Assy Glove Compartment"
+        }, 
+        {
+            "src":"public/images/products/automotive/garnihs_assy_center_pillar.webp", 
+            "src2":"public/images/products/automotive/garnihs_assy_center_pillar.webp", 
+            "alt":"Garnish Assy Center Pillar"
+        }, 
+        {
+            "src":"public/images/products/automotive/hvac2.webp" ,
+            "src2":"public/images/products/automotive/hvac2.webp" ,
+            "alt":"HVAC Parts"
+        }, 
+        {
+            "src":"public/images/products/automotive/mirror.webp" ,
+            "src2":"public/images/products/automotive/mirror.webp" ,
+            "alt":"Mirror"
+        }, 
+        {
+            "src":"public/images/products/automotive/plate_read_floor_finish.webp" ,
+            "src2":"public/images/products/automotive/plate_read_floor_finish.webp" ,
+            "alt":"Plate Rear Floor Finish"
+        }, 
+        {
+            "src":"public/images/products/automotive/reserve_tank.webp" ,
+            "src2":"public/images/products/automotive/reserve_tank.webp" ,
+            "alt":"Reserve Tank"
+        }, 
+        {
+            "src":"public/images/products/automotive/steering_wheel2.webp" ,
+            "src2":"public/images/products/automotive/steering_wheel2.webp" ,
+            "alt":"Steering Wheel"
+        }
+    ],
+    "molding":[
+        {
+            "src":"public/images/products/molding/plasticchromeplating-small.jpg" ,
+            "src2":"public/images/products/molding/plasticchromeplating.jpg" ,
+            "alt":"Plastic Chrome Plating"
+        },
+        {
+            "src":"public/images/products/molding/singletubwashingmachine-inner-small.jpg" ,
+            "src2":"public/images/products/molding/singletubwashingmachine-inner.jpg" ,
+            "alt":"Single Tub W/M Inner"
+        },
+        {
+            "src":"public/images/products/molding/singletubwashingmachine-outer-small.jpg" ,
+            "src2":"public/images/products/molding/singletubwashingmachine-outer.jpg" ,
+            "alt":"Single Tub W/M Outer"
+        },
+        {
+            "src":"public/images/products/molding/singletubwashingmachine-doorframe-small.jpg" ,
+            "src2":"public/images/products/molding/singletubwashingmachine-doorframe.jpg" ,
+            "alt":"Single Tub W/M Door Frame"
+        },
+        {
+            "src":"public/images/products/molding/doubletubwashingmachine-inner-small.jpg" ,
+            "src2":"public/images/products/molding/doubletubwashingmachine-inner.jpg" ,
+            "alt":"Double Tub W/M Inner"
+        },
+        {
+            "src":"public/images/products/molding/doubletubwashingmachine-outer-small.jpg" ,
+            "src2":"public/images/products/molding/doubletubwashingmachine-outer.jpg" ,
+            "alt":"Double Tub W/M Outer"
+        },
+        {
+            "src":"public/images/products/molding/doubletubwashingmachine-base-small.jpg" ,
+            "src2":"public/images/products/molding/doubletubwashingmachine-base.jpg" ,
+            "alt":"Double Tub W/M Door Frame"
+        }
+    ]
+  }

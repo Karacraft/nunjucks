@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auvitronics Limited</title>
+    <link rel="stylesheet" href="public/css/theme-light.css">
+
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&family=Nunito:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet"> 
+	<!-- Font Awesome -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css'/>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon_dark/favicon-32x32.png">
+
+</head>
+<body class="home-background">
+    <audio preload="auto" src="public/videos/sun.mp3" loop="true" autobuffer>
+        Unsupported in Firefox
+    </audio>
+    {% block content  %} 
+    {% endblock %}
+
+    <script>
+        {# Audio Loop #}
+        function setCookie(c_name,value,exdays)
+        {
+            var exdate=new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+            document.cookie=c_name + "=" + c_value;
+        }
+
+        function getCookie(c_name)
+        {
+            var i,x,y,ARRcookies=document.cookie.split(";");
+            for (i=0;i<ARRcookies.length;i++)
+            {
+            x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+            y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+            x=x.replace(/^\s+|\s+$/g,"");
+            if (x==c_name)
+                {
+                return unescape(y);
+                }
+            }
+        }
+
+        var song = document.getElementsByTagName('audio')[0];
+        var played = false;
+        var tillPlayed = getCookie('timePlayed');
+        function update()
+        {
+            if(!played){
+                if(tillPlayed){
+                song.currentTime = tillPlayed;
+                song.play();
+                played = true;
+                }
+                else {
+                        song.play();
+                        played = true;
+                }
+            }
+
+            else {
+            setCookie('timePlayed', song.currentTime);
+            }
+        }
+        setInterval(update,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+{% extends "layout.njk" %}
+
+{% block header %}
+    <title>Auvitroinics Limited | Business</title>
+{% endblock %}
+
+{# Page Content Here #}
+{% block content %}
+    {# Incldue Navigation Here #}
+    {% include "partials/navigation.njk" %}
+
+    {# Include topfunction #}
+    {% include "partials/topfunction.njk" %}
+    <main>
+        <section id="business">
+
+            <h1 class="heading-over-main">Business</h1>
+            
+            <div class="grid business grid-cols-3-2" >
+
+                <!-- Auto -->
+                <article>
+                    <img class="lazy" src="public/images/backgrounds/autoparts-bg-downsized.jpg" data-src="public/images/backgrounds/autoparts-bg.jpg" alt="" srcset="">
+                    <span class="heading">Automotive</h1>
+                    <div class="overlay">
+                        <div>
+                            <p>
+                                Wide range of auto parts both interior and exterior.
+                                <a href="#auto">Learn More</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <!-- HCP -->
+                <article>
+                    <img class="lazy" src="public/images/backgrounds/hcp-bg-downsized.jpg" data-src="public/images/backgrounds/hcp-bg.jpg" alt="" srcset="">
+                    <span class="heading">Health Care Packaging</h1>
+                    <div class="overlay">
+                        <div>
+                            <p>
+                                Eye & Ear drop containers, Syrup Bottels. 
+                                <a href="#hcp">Learn More</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Molding -->
+                <article>
+                    <img class="lazy" src="public/images/backgrounds/custommold.jpg" data-src="public/images/backgrounds/custommold.jpg" alt="" srcset="">
+                    <span class="heading">Custom Molding/Chrome Plating</h1>
+                    <div class="overlay">
+                        <div>
+                            <p>
+                                Custom Molding , Chrome Plating & Part Painting facility @ AuVitroinics. 
+                                <a href="#molding">Learn More</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+            </div>
+
+        </section>
+		
+        <!-- Auto -->
+        <section id="auto">
+            <div class="section-heading">
+                <h1>Automotive</h1>
+                <p>
+                    Wide range of auto parts both interior and exterior, comprising garnishes, scuff plates, duct quarter vents, wheel caps, inside & outside door handles, air cleaner, reservoir tanks, etc. Production of Bakelite Ashtray on 220-Ton Thermoset Injection Moulding Machine. Range of assembly of precision parts, comprising manual & electrical mirrors, Lamp assemblies etc.
+                </p>
+                <p>  
+                    Cubic printing of plastic parts under technical collaboration with Cubic Co. Ltd. Japan. Manufacture of Steering wheel, Eyebrows using polyurethane material. Introducing for the first time in Pakistan, composite Doors & Windows with exceptional performance features.
+                </p>
+                <!-- Auto Slider -->
+                <div class="swiper swiperAutomotives" style="margin-top:5rem;">
+                    <div class="swiper-wrapper">
+                        {% for image in auto %}
+                        <div class="swiper-slide">
+                            <figure style="position: relative;">
+                                <a href="{{image.src2}}" target="_blank">
+                                    <img  
+                                    width="300"
+                                    height="400"
+                                    title="{{image.alt}}"
+                                    src="{{image.src}}" 
+                                    alt="{{image.alt}}">
+                                </a>
+                            </figure>
+                            <figcaption width="300">
+                                {{image.alt}}
+                            </figcaption>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+		<!-- Hcp -->
+        <section id="hcp">
+            <div class="section-heading">
+                <h1>Health Care Packaging</h1>
+                <p>
+                    AVT has developed state of the art Healthcare Packaging facility to cater cGMP needs of different pharmaceutical customers in 2013. Currently we are producing syrup and eye drop packaging components which provides complete rigid packaging solution to our valued customers. Being a pioneer, AVT has introduced leak-proof slide and seal solution with multicolor pilfer proof seal to ensure product integrity. 
+                </p>
+                <p>
+                    To meet the international regulatory requirements, AVT is also using medical grade plastic resins for ophthalmic packaging requirements that allows desired product stability. With the believe of continuous improvement, AVT has been constantly growing its healthcare packaging business by investing in highly precise molds and manufacturing machines to fully comprehend customers’ needs and expectation. 
+                </p>
+                    <!-- Auto Slider -->
+                    <div class="swiper swiperHcp" style="margin-top:2rem;">
+                    <div class="swiper-wrapper">
+                        {% for image in hcp %}
+                        <div class="swiper-slide">
+                            <figure style="position: relative;">
+                                <a href="{{image.src2}}" target="_blank">
+                                    <img  
+                                    width="300"
+                                    height="400"
+                                    title="{{image.alt}}"
+                                    src="{{image.src}}" 
+                                    alt="{{image.alt}}">
+                                </a>
+                            </figure>
+                            <figcaption width="300">
+                                {{image.alt}}
+                            </figcaption>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Molding -->
+        <section id="molding">
+            <div class="section-heading">
+                <h1>Custom Molding/Chrome Plating</h1>
+                <p>
+                </p>
+               
+                <!-- Auto Slider -->
+                <div class="swiper swiperMold" style="margin-top:2rem;">
+                    <div class="swiper-wrapper">
+                        {% for image in molding %}
+                        <div class="swiper-slide">
+                            <figure style="position: relative;">
+                                <a href="{{image.src2}}" target="_blank">
+                                    <img  
+                                    width="300"
+                                    height="400"
+                                    title="{{image.alt}}"
+                                    src="{{image.src}}" 
+                                    alt="{{image.alt}}">
+                                </a>
+                            </figure>
+                            <figcaption width="300">
+                                {{image.alt}}
+                            </figcaption>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+	</main>
+    {% include "partials/footer.njk" %}
+
+{% endblock %}
+
+{# Scripts Here #}
+{% block scripts %}
+    <script>
+        const swiperAutomotives = new Swiper('.swiperAutomotives', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            speed:1000,
+            // effect:'fade'
+        });
+    </script>
+    <script>
+        let observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: [0.25, 0.5, 0.75, 1]
+        }
+
+        function observerCallback(entries, observer) {
+            entries.forEach(entry => {
+                    if(entry.isIntersecting && entry.target.id === 'auto')
+                    {
+                        swiperAutomotives.autoplay.start()
+                    }
+                    if(entry.isIntersecting && entry.target.id === 'hcp')
+                    {
+                        swiperHcp.autoplay.start()
+                    }
+                    if(entry.isIntersecting && entry.target.id === 'molding')
+                    {
+                        swiperMold.autoplay.start()
+                    }
+                }
+            );
+        }
+
+        // Grab all relevant elements from DOM
+        const mysections = document.querySelectorAll('section');
+
+        // Call function for each element
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        mysections.forEach(el => observer.observe(el));
+
+    </script>
+{% endblock %}

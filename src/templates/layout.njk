@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block header %} 
+    {% endblock %}
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&family=Nunito:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet"> 
+	<!-- App Stylesheet -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css'/>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.css' integrity='sha512-dlzxoRxU0/ZfgAUFn+8LwmuvNCrVZ3gnPedd8c3m5YwEq1bory6yFCt3uOzDTxnY4fTqVpM0Twxcn8scmBvuQg==' crossorigin='anonymous'/>
+	<link rel="stylesheet" href="public/css/theme-light.css" id="theme-link">
+    <!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon_dark/favicon-32x32.png">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body id="">
+    <audio preload="auto" src="public/videos/sun.mp3" loop="true" autobuffer>
+        Unsupported in Firefox
+    </audio>
+    {% block content  %} {% endblock %}
+    <!-- JS -->
+	<script src="public/js/scrolltotop.js" defer></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js' integrity='sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg==' crossorigin='anonymous'></script>
+    {% block scripts %}
+    {% endblock %}
+
+    <script>
+        {# Lazy Image Loading : https://web.dev/lazy-loading-images/ #}
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    {# lazyImage.srcset = lazyImage.dataset.srcset; #}
+                    lazyImage.classList.remove("lazy");
+                    lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+                });
+
+                lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+                });
+            } else {
+                // Possibly fall back to event handlers here
+            }
+            });
+    </script>
+    <script>
+        
+        function setCookie(c_name,value,exdays)
+        {
+            var exdate=new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+            document.cookie=c_name + "=" + c_value;
+        }
+
+        function getCookie(c_name)
+        {
+            var i,x,y,ARRcookies=document.cookie.split(";");
+            for (i=0;i<ARRcookies.length;i++)
+            {
+            x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+            y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+            x=x.replace(/^\s+|\s+$/g,"");
+            if (x==c_name)
+                {
+                return unescape(y);
+                }
+            }
+        }
+
+        var song = document.getElementsByTagName('audio')[0];
+        var played = false;
+        var tillPlayed = getCookie('timePlayed');
+        function update()
+        {
+            if(!played){
+                if(tillPlayed){
+                song.currentTime = tillPlayed;
+                song.play();
+                played = true;
+                }
+                else {
+                        song.play();
+                        played = true;
+                }
+            }
+
+            else {
+            setCookie('timePlayed', song.currentTime);
+            }
+        }
+        setInterval(update,1000);
+    </script>
+
+</body>
+</html>
